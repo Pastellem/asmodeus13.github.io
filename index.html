@@ -51,12 +51,13 @@
 
         .caption {
             position: absolute;
-            left: 0;
+            left:0;
             top: 50%;
             width: 100%;
             text-align: center;
             color: #000;
             z-index: 2;
+
         }
 
         .caption span.border {
@@ -65,6 +66,7 @@
             padding: 18px;
             font-size: 25px;
             letter-spacing: 10px;
+            height: 100%;
         }
 
         h3 {
@@ -96,11 +98,33 @@
             }
         }
 
-        .langue {
-            position: absolute;
-            right: 5%;
-            top: -300px;
-        }
+        .lang{
+            background-color: #111;
+            color: #fff;
+            padding: 12.8%;
+            font-size: 12px;
+            width: 5vw;
+            letter-spacing: 10px;
+            border: 1px solid #111;
+          }
+
+        .c1{
+          width: 55%;
+          float: left;
+          display: inline;}
+          .c2{
+            width: 35%;
+            float: left;
+          }
+          .left{float: left;}
+          .right{float: right;}
+          span li {
+            list-style: none;
+            padding: 0;
+            margin:0
+          }
+          ul {padding: 0;
+          margin: 0}
     </style>
 </head>
 
@@ -110,15 +134,25 @@
 
 
     <div class="bgimg-1">
-        <div class="caption">
-            <a href="#" class="langue"><img border="0" src="../image/langGREY.ico" alt="LangueIconGrey" width="50" height="50"></a>
-            <span class="border"> Bio-Informatique</span>
+      <div class="caption">
+        <div class="c1">
+            <span class="border right" id="titre"> Bio-Informatique</span>
         </div>
+        <div class="c2">
+          <span class="left">
+            <ul>
+              <li>
+            <button type="button" onclick="translateENG()" class="lang">ENG</button>
+          </li><li>
+            <button type="button" onclick="translateFR()" class="lang">FR</button>
+          </li></ul></span>
+        </div>
+      </div>
     </div>
 
     <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-        <h3 style="text-align:center;">A propos de la Bio-Informatique</h3>
-        <p>La bio-informatique est un champ de recherche multi-disciplinaire où travaillent de concert biologistes, médecins, informaticiens, mathématiciens, physiciens et bio-informaticiens, dans le but de résoudre un problème scientifique posé par la biologie</p>
+        <h3 style="text-align:center;" id="h3">A propos de la Bio-Informatique</h3>
+        <p id="demo">La bio-informatique est un champ de recherche multi-disciplinaire où travaillent de concert biologistes, médecins, informaticiens, mathématiciens, physiciens et bio-informaticiens, dans le but de résoudre un problème scientifique posé par la biologie</p>
     </div>
 
     <div class="bgimg-2">
@@ -130,20 +164,20 @@
     <div style="position:relative;">
         <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
             <img src="https://jgsdhq.dm.files.1drv.com/y4munUlQqQwUfn5SDxHdRqLNH6cTjnhrEXtNBKhN8y1i220xLCUBckZQDMhrOYBHtc0cenTvtsLJSjZYzY5hHwH6qDdaySDluWOuN0Rtn8CcTuWycsmYntHcGypZekVr0NoN9SQxrvPmyEvZsqQeuI-pnHu-rYzc361f7REiDr9WXK1aiFqtmHVoV6FRDf87BK1spemolHZLFztjtEHDJU6xA?width=256&height=237&cropmode=none" class="identity" alt="photo_cv" width="15%" height="10%" style=" float: left;">
-            <p style="font-size: 2vw;"><span style=" padding-left:10px">Je suis METURA Pastelle</span><br><span style=" padding-left:30px;font-size: 1.5vw"> <i>Et je suis passionnée de Bio-Informatique</i></span></p>
+            <p style="font-size: 2vw;"><span style=" padding-left:10px" id="name">Je suis METURA Pastelle</span><br><span style=" padding-left:30px;font-size: 1.5vw" id="name2"> <i>Et je suis passionnée de Bio-Informatique</i></span></p>
 
         </div>
     </div>
 
     <div class="bgimg-3">
         <div class="caption">
-            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">ICI</span>
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;" id="here">ICI</span>
         </div>
     </div>
 
     <div style="position:relative;">
         <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-            <blockquote><q><i>J ’introduirais mes compétences et connaissances au travers de ce site.  Ainsi connaisseur et amateur pourront en apprendre plus. A la fois sur moi mais aussi sur mes aspirations dans la recherche in silico.</i></q>
+            <blockquote id="quote"><q><i>J ’introduirais mes compétences et connaissances au travers de ce site.  Ainsi connaisseur et amateur pourront en apprendre plus. A la fois sur moi mais aussi sur mes aspirations dans la recherche in silico.</i></q>
             </blockquote>
 
         </div>
@@ -152,7 +186,7 @@
     <div id="bgimg-4">
         <div class="caption">
             <span class="border">
-            <a href="accueil.html" role="button" onclick="myMove()">ENTREZ</a></span>
+            <a href="accueil.html" role="button" onclick="myMove()" id="enter">ENTREZ</a></span>
 
         </div>
     </div>
@@ -160,23 +194,28 @@
 </body>
 
 </html>
-<!--href="entrez.html" <script>
-        function myMove() {
-
-            var element = document.getElementById("bgimg-4");
-            var pos = 0;
-            var id = setInterval(frame, 90);
-
-            function frame() {
-                if (pos == 10) {
-                    clearInterval(id);
-
-                } else {
-                    pos++;
-                    element.style.transform = 'rotateY(' + pos + 'deg)';
-                }
-            }
-
+<script>
+        function translateFR() {
+          document.getElementById("titre").innerHTML = "Bio-Informatique";
+          document.getElementById("h3").innerHTML = "A propos de la Bio-Informatique";
+          document.getElementById("demo").innerHTML = "La bio-informatique est un champ de recherche multi-disciplinaire où travaillent de concert biologistes, médecins, informaticiens, mathématiciens, physiciens et bio-informaticiens, dans le but de résoudre un problème scientifique posé par la biologie";
+          document.getElementById("name").innerHTML = "Je suis Pastelle METURA";
+          document.getElementById("name2").innerHTML = "Je suis passionnée par la Bio-Informatique";
+          document.getElementById("here").innerHTML = "ICI";
+          document.getElementById("me").innerHTML = "& MOI";
+          document.getElementById("enter").innerHTML = "ENTREZ";
+          document.getElementById("quote").innerHTML = "J ’introduirais mes compétences et connaissances au travers de ce site.  Ainsi connaisseur et amateur pourront en apprendre plus. A la fois sur moi mais aussi sur mes aspirations dans la recherche in silico.";
+        }
+        function translateENG() {
+          document.getElementById("titre").innerHTML = "BioInformatic";
+          document.getElementById("h3").innerHTML = "About BioInformatic";
+          document.getElementById("demo").innerHTML = "BioInformatic is a multi-disciplinary research field in which biologist, doctor, computer scientists, mathematicians, physicists and bioinformaticians work together to solve a scientific problem posed by biology.";
+          document.getElementById("name").innerHTML = "My name is Pastelle METURA";
+          document.getElementById("name2").innerHTML = "I'm passionnate by BioInformatic and Language of programmation";
+          document.getElementById("here").innerHTML = "HERE";
+          document.getElementById("me").innerHTML = "& ME";
+          document.getElementById("enter").innerHTML = "ENTER";
+          document.getElementById("quote").innerHTML = "I would introduce my skills and knowledge through this site. So professional and amateur can learn more. At the same time, on me but also on my aspirations in the research in silico.";
 
         }
-    </script>-->
+    </script>
