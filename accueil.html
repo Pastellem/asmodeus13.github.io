@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Blog</title>
+    <!--Enable accent font-->
+    <meta charset="utf-8">
+    <!--CSS-->
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/glyphicon.css">
+</head>
+
+<style>
+    html {
+        font-size: 14pt;
+        /*background-color: #1a1a1a;*/
+    }
+
+    .label {
+        text-align: left;
+        display: inline-block;
+        margin: 1%;
+        padding: .2em .6em .3em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+    }
+
+    .tag-label {
+        background-color: #3366cc;
+        font-weight: 100
+    }
+
+    .resume {
+        font-family: 'Calibri';
+        font-size: 10pt;
+        font-weight: 100;
+    }
+
+    .resume-article {
+        text-align: justify;
+    }
+
+    .galery {
+        height: 36vw;
+        padding: 2%;
+        float: left;
+    }
+
+    .bottom-left {
+        position: absolute;
+        z-index: 1;
+        bottom: 1vw;
+        left: 1vw;
+        color: white
+    }
+
+    .bottom-left p {
+        font-weight: bolder;
+        text-align: left;
+        display: inline-block;
+        margin: 1%;
+        padding: .2em .6em .3em;
+        font-size: 75%;
+        font-weight: 1000;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        font-family: 'calibri'
+    }
+
+    .container-img:hover .image {
+        opacity: 0.3;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .category {
+        text-align: left;
+        display: inline-block;
+        margin: 1%;
+        padding: .2em .6em .3em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border: 3px solid white;
+        border-radius: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+</style>
+
+<body>
+    <!--Navbar inter-page-->
+    <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" id="demo"></a>
+                </div>
+                <ul class="nav navbar-nav" >
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li ><a href="cv.html">CV</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="container-fluid right" >
+                <ul class="nav navbar-nav" >
+                    <li id="Nuance"><a href="#">Mode</a></li>
+                </ul>
+            </div>
+    </nav>
+    <div class="bg-blue"></div>
+
+    <div class="container-center">
+        <div class="navbar-bot">
+            <div class="navbar-bot-left">
+                <span class="menu active"><a class="active" href="#">HOME</a></span>
+                <span class="menu"><a href="cv.html">CV</a></span>
+                <div class="dropdown"> <span class="menu"><a href="projets.html">APPLICATION</a></span>
+                    <div class="dropdown-content">
+                        <a href="#">Python</a>
+                        <a href="#">Perl</a>
+                        <a href="#">Java</a>
+                        <a href="#">C, C++</a></div>
+                </div>
+
+                <span class="menu"><a href="telecharger.html">TELECHARGER</a></span>
+                <!--LOG IN REQUERY-->
+                <span class="menu"><a href="Todo.html">TODO*</a></span>
+                <span class="menu"><a href="voyage.html">VOYAGE*</a></span>
+                <div class="dropdown"><span class="menu"><a href="media.html">MEDIATHEQUES*</a></span>
+                    <div class="dropdown-content">
+                        <a href="#">Video</a>
+                        <a href="#">Livre</a>
+                        <a href="#">Jeux</a>
+                    </div>
+                </div>
+                <span class="menu"><a href="sport.html">SPORT*</a></span>
+            </div>
+            <div class="navbar-bot-right">
+                <div class="icon account"><img src="../image/account.png" style="width: 100%; height: 100%"> </div>
+            </div>
+        </div>
+
+        <!--MENU CENTRE-->
+        <div class="containter-left">
+            <div class="gallery">
+                <div class="container-img" style="width:60%; height: 20vw;float: left;">
+                    <img class="image" src="../image/cv.JPG" alt="image" style="width:100%; height:100%">
+                    <div class="bottom-left t-left">
+                        <p>Mise en Ligne</p>
+                        <p class="category">Curriculum</p>
+
+                    </div>
+
+                </div>
+                <div class="container-img" style="width:40%;height:20vw;float: left;">
+                    <img class="image" src="../image/Belgium.png" alt="image" style="width:100%; height:100%">
+                    <div class="bottom-left t-left">
+                        <p>Le Pays du Chocolat et des Frites</p>
+                        <p class="category">VOYAGE</p>
+
+                    </div>
+                </div>
+                <div class="container-img" style="width:35%;height: 16vw;float: left;">
+                    <img class="image" src="../image/grimgar.jpg" alt="image" style="width:100%; height:100%">
+                    <div class="bottom-left t-left">
+                        <p>AJOUTER A LA MEDIATHEQUE</p>
+                        <p class="category"> ANIME</p>
+
+                    </div>
+                </div>
+                <div class="container-img" style="width:31%;height: 16vw;float: left;">
+                    <img class="image" src="../image/tiramisu.png" alt="image" style="width:100%;height:100%">
+                    <div class="bottom-left t-left">
+                        <p> RECETTE ESSAYEE</p>
+                        <p class="category">CUISINE</p>
+
+                    </div>
+                </div>
+                <div class="container-img" style="width:34%;height: 16vw;float: left;">
+                    <img class="image" src="../image/chapitre1.jpg" alt="image" style="width:100%; height:100%">
+                    <div class="bottom-left t-left">
+                        <p>NOUVEAU CHAPITRE</p>
+                        <p class="category"> LIVRE</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-new">
+                <div class="article">
+                    <div class="img-article left">
+                        <img src="../image/web-developer.jpg" alt="image" style="width:100%; height:100%">
+                    </div>
+
+                    <div>
+                        <p class="article-titre" style=" font-weight:100; font-size: 17pt">CREATION D'UN SITE WEB</p>
+                        <span class="resume" style="padding:0 1% ;border-right: 1px solid #3366cc">TECH WEB</span>
+                        <span class="resume" style="padding:0 1% ;border-right: 1px solid #3366cc">COMMENTS </span>
+                        <span class="resume" style="padding:0 1% ;border-right: 1px solid #3366cc">AVRIL 02, 2018</span>
+                        <p class="resume-article">Mise en marche d'un long projet et voulus depuis longtemps. La création d'un site de A à Z</p>
+                        <a class=" tag-label label" href="#">Lire</a></div>
+                </div>
+                <div class="article">
+                    <div class="img-article left">
+                        <img src=" ../image/web.jpg " alt="image " style="width:100%; height:100%">
+                    </div>
+                    <div>
+                        <p class="article-titre " style="font-size: 17pt ">CURRICULUM VITEA</p>
+                        <span class="resume " style="padding:0 1% ;border-right: 1px solid #3366cc "> SLICE LIFE</span>
+                        <span class="resume " style="padding:0 1% ; border-right: 1px solid #3366cc ">COMMENTS</span>
+                        <span class="resume " style="padding:0 1% ;border-right: 1px solid #3366cc ">MAI 03, 2018</span>
+                        <p class="resume-article ">Mise en ligne de mon cv. Yeah</p>
+                        <a class=" tag-label label" href="# ">Lire</a></div>
+                </div>
+            </div>
+
+
+            <div class="bottom" style="margin-top: 3%; text-align: center ">
+                <div class="pagination ">
+                    <a href="# ">&laquo;</a>
+                    <a href="# ">1</a>
+                    <a class="active " href="# ">2</a>
+                    <a href="# ">3</a>
+                    <a href="# ">4</a>
+                    <a href="# ">5</a>
+                    <a href="# ">6</a>
+                    <a href="# ">&raquo;</a>
+                </div>
+            </div>
+        </div>
+        <!--MENU RIGHT-->
+        <div class="containter-right ">
+            <div class="menu-right t-left ">
+                <svg style="height:40; width: 100%;">
+                            <polygon points="0,0 20,0 0,20" style="fill:#3366cc" />
+                            <text x="20" y="29" fill="black">LES PLUS VU</text>
+                          </svg>
+            </div>
+            <div class="article-right" style="margin: 4% 0; border-bottom: 1px solid #3366cca2">
+                <h5>CREATION D'UN SITE WEB</h5>
+            </div>
+            <div class="article-right" style="margin: 4% 0;border-bottom: 1px solid #3366cca2">
+                <h5>CURRICULUM VITEA</h5>
+            </div>
+
+            <div class="menu-right t-left  ">
+                <svg style="height:40; width: 100%;">
+                            <polygon points="0,0 20,0 0,20" style="fill:#3366cc" />
+                            <text x="20" y="29" fill="black">TAG</text>
+                          </svg>
+            </div>
+            <div class="tag" style=" margin: 4% 0">
+                <span class="tag-label label ">Sciences</span>
+                <span class="tag-label label "> Slice of Life</span>
+                <span class="tag-label label ">Biologie</span>
+                <span class="tag-label label ">Eccologie</span>
+                <span class="tag-label label ">Programmation</span>
+                <span class="tag-label label ">Jeux Vidéo</span>
+            </div>
+            <div class="menu-right t-left ">
+                <svg style="height:40; width: 100%;">
+                                <polygon points="0,0 20,0 0,20" style="fill:#3366cc" />
+                                <text x="20" y="29" fill="black">BLOG ARCHIVE </text>
+                              </svg>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+<script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toDateString();
+</script>
+<!--
+   <ul class="breadcrumb ">
+  <li><a href="# ">Home</a></li>
+  <li><a href="# ">Pictures</a></li>
+  <li><a href="# ">Summer 15</a></li>
+  <li>Italy</li>
+</ul>
+
+-->
