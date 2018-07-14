@@ -498,10 +498,16 @@ body {
     }
 }
 .column {
-    margin:0 6% 6% ;
-    margin-top: 1% ;
+    float: left;
+    margin-bottom: 16px;
     padding: 0 8px;
+}
 
+@media screen and (max-width: 650px) {
+    .column {
+    width: 100%;
+    display: block;
+    }
 }
 
 .fixed{
@@ -515,6 +521,10 @@ body {
 }
 .right {
     float: right;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px
 }
 
 .relative{
