@@ -9,8 +9,8 @@ body {
 .absolute{
     position: absolute;
 }
-.row.content,
-.abjust{height: 1500px}
+/*.row.content,
+.abjust{height: 1500px}*/
 
 .top {
     top: 0
@@ -510,7 +510,9 @@ body {
 .left{
     float: left;
 }
-
+.stick{
+    position: sticky;
+}
 .right {
     float: right;
 }
