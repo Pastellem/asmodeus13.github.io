@@ -122,6 +122,16 @@ a {
     display: grid
 }
 
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 5%;
+}
 
 /*DROPDOWN*/
 
@@ -170,94 +180,6 @@ a {
     font-weight: 100;
 }
 
-/*TOP*/
-
-
-.navbar-top {
-    font-size: 12pt;
-    padding: 0.05% 0;
-}
-
-.fixed {
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030
-}
-
-.navbar-top span {
-    margin-right: 1%;
-    font-family: 'Calibri';
-    font-weight: 100;
-}
-
-
-/*BOTTOM*/
-
-.navbar-bot {
-    padding-bottom: 0;
-    display: inline-block;
-    width: 100%;
-    padding: 1% 0;
-    font-size: 15pt
-}
-/*NAVBAR LEFT AND RIGHT*/
-
-.navbar-bot-left {
-    width: 94%;
-    float: left;
-    text-align: left;
-}
-
-.navbar-bot-right {
-    width: 4.9%;
-    float: left;
-    text-align: right
-}
-
-.navbar-top-left {
-    width: 65%;
-
-}
-
-.navbar-top-right {
-    width: 30%;
-
-}
-
-
-
-
-/*PAGINATION*/
-
-.pagination {
-    display: inline-block;
-}
-
-.pagination a {
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-
-
-
-ul.breadcrumb {
-    padding: 8px 16px;
-    list-style: none;
-}
-
-ul.breadcrumb li {
-    display: inline;
-}
-
-ul.breadcrumb li+li:before {
-    padding: 8px;
-    content: "/\00a0";
-}
-
-
 
 /*SVG*/
 
@@ -297,11 +219,9 @@ acronym {
 }
 
 .label {
-    text-align: left;
     display: inline-block;
     margin: 1%;
     padding: .2em .6em .3em;
-    font-size: 1vw;
     font-weight: 100;
     line-height: 1;
     text-align: center;
@@ -418,12 +338,7 @@ td {
     padding: 4% 0;
 }
 
-.col-3 {
-    float: left;
-    width: 20%;
-    text-align: right;
-    margin-right: 10px;
-}
+
 
 .type1 {
     width: 70%;
