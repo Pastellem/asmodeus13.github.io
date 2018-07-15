@@ -40,7 +40,7 @@ a {
 }
 
 .text {
-    font-size: 20px;
+    font-size: 1.5vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -541,6 +541,13 @@ a {
     }
 }
 
+.col-sm-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
 .column {
     float: left;
     margin-bottom: 16px;
@@ -708,8 +715,14 @@ a {
     margin-left: -15px;
 }
 
-.row.bg-3 {
-    padding: 0 20%
+.row:after,
+.row:before {
+    display: table;
+    content: " "
+}
+
+.row:after {
+    clear: both
 }
 
 .row>.col-sm-3 {

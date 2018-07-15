@@ -1,7 +1,3 @@
-
-
-
-
 /*ARTICLE*/
 
 .article {
@@ -63,10 +59,9 @@
 
 /*CONTAINER*/
 
-
 .container-img {
     position: relative;
-    text-align: center;
+    salign: center;
     color: white;
     opacity: 0.8;
 }
@@ -98,7 +93,6 @@
     float: left;
     display: grid
 }
-
 
 
 /*DROPDOWN*/
@@ -139,8 +133,6 @@
 
 /*NAVBAR*/
 
-
-
 .menu {
     padding: 1.49% 2%;
     font-family: 'Calibri';
@@ -154,8 +146,9 @@
 .reussite {
     border-radius: 10vw
 }
-/*UL*/
 
+
+/*UL*/
 
 li {
     list-style: none;
@@ -166,20 +159,14 @@ acronym {
     text-decoration: none;
 }
 
-
-
 .main {
     float: left;
     width: 76%;
     height: 71vw;
-
 }
 
 
 /*WIDTH*/
-
-
-
 
 table {
     border-collapse: collapse;
@@ -190,7 +177,6 @@ table {
     float: left;
     width: 100%;
     text-align: left;
-
 }
 
 .col-1 {
@@ -208,15 +194,14 @@ table {
     padding-left: 1%;
     text-align: center;
 }
+
 .title {
     border: 1px solid transparent;
     display: block;
     margin: 10px 5px;
     padding: .2em .6em .3em;
     font-size: 30px;
-
     line-height: 1;
-
     text-align: left;
     white-space: nowrap;
 }
@@ -226,9 +211,7 @@ table {
     margin: 10px 5px;
     padding: .2em .6em .3em;
     font-size: 20px;
-
     line-height: 1;
-
     text-align: left;
     white-space: nowrap;
 }
@@ -241,8 +224,6 @@ table {
 .container-sm {
     padding: 4% 0;
 }
-
-
 
 .type1 {
     width: 70%;
@@ -266,12 +247,16 @@ table {
 ::-webkit-scrollbar {
     width: 1%;
 }
+
+
 /* Track */
 
  ::-webkit-scrollbar-track {
     box-shadow: inherit 0 0 1%;
     border-radius: 10px;
 }
+
+
 /* Handle */
 
  ::-webkit-scrollbar-thumb {
@@ -279,9 +264,9 @@ table {
     opacity: 0.2;
     border-radius: 10px;
 }
+
+
 /* Handle on hover */
- /*Bootstrap Source*/
 
 
-
-
+/*Bootstrap Source*/
