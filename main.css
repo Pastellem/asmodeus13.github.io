@@ -13,6 +13,12 @@ img {
     display: table;
 }
 
+@media screen and (max-width: 600px) {
+    .relative {
+        position: relative;
+    }
+}
+
 [class*="col-"] {
     width: 100%;
     padding: 15px;
@@ -106,9 +112,21 @@ img {
     display: grid;
 }
 
+.b {
+    margin-top: 4%;
+    margin-left: 26%;
+}
+
+@media screen and (max-width: 600px) {
+    .b {
+        margin-top: -4%;
+        margin-left: 0;
+    }
+}
+
 .container-s>.container {
-    padding-right: 0;
-    margin: 1%;
+    padding-right: 15px;
+    margin: 2%;
     height: auto;
     background-color: aqua;
     margin-right: auto;
